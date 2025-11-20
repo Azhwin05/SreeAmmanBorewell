@@ -1,0 +1,219 @@
+.hero {
+    background-image: linear-gradient(rgba(0, 43, 92, 0.8), rgba(0, 43, 92, 0.8)), url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: var(--color-white);
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+}
+
+.heroTitle {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-white);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.heroSub {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.heroButtons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.trustBadges {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.benefitsSection {
+    background-color: var(--color-grey-light);
+    padding: 2rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.benefitsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.benefitItem {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 600;
+    color: var(--color-navy);
+}
+
+.checkIcon {
+    color: var(--color-secondary);
+}
+
+.servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.serviceCard {
+    background: var(--color-white);
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s;
+    border: 1px solid #eee;
+}
+
+.serviceCard:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-primary);
+}
+
+.serviceTitle {
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.serviceDesc {
+    color: var(--color-grey-dark);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.serviceLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.aboutSection {
+    background-color: #f9f9f9;
+}
+
+.aboutContent {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.aboutContent h2 {
+    margin-bottom: 1.5rem;
+}
+
+.aboutContent p {
+    margin-bottom: 1rem;
+    color: var(--color-grey-dark);
+}
+
+.areaBelt {
+    background: var(--color-white);
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid #eee;
+}
+
+.areaList {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.areaList:last-child {
+    margin-bottom: 0;
+}
+
+.areaIcon {
+    color: var(--color-primary);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.ctaSection {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 4rem 0;
+}
+
+.ctaButtons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.btn-white {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    padding: 12px 24px;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-white:hover {
+    background-color: var(--color-grey-light);
+}
+
+.btn-outline-white {
+    background-color: transparent;
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
+    padding: 10px 22px;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-outline-white:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+    .heroTitle {
+        font-size: 1.8rem;
+    }
+
+    .heroButtons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .ctaButtons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sriammanborewells.com/sitemap.xml
